@@ -4,58 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peddy</title>
+    <!-- daisyui@5 cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fontawsom link -->
+    <script src="https://kit.fontawesome.com/1be1fc140b.js" crossorigin="anonymous" ></script>
+
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- fav icon -->
+    <link rel="shortcut icon"  href="./images/icons8-pets-48 (1).png"  type="image/x-icon" />
 </head>
-<body>
-    <div class="navbar bg-base-100 shadow-sm">
-        <div class="flex-1">
-          <a class="btn btn-ghost text-xl">daisyUI</a>
-        </div>
-        <div class="flex-none">
-          <div class="dropdown dropdown-end">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-              <div class="indicator">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
-                <span class="badge badge-sm indicator-item">8</span>
-              </div>
-            </div>
-            <div
-              tabindex="0"
-              class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
-              <div class="card-body">
-                <span class="text-lg font-bold">8 Items</span>
-                <span class="text-info">Subtotal: $999</span>
-                <div class="card-actions">
-                  <button class="btn btn-primary btn-block">View cart</button>
+<body >
+  <!-- header section staet here -->
+  <header class="container mx-auto mt-3">
+      <nav>
+        <div class="flex  bg-base-100 shadow-sm py-4">
+
+          <div class=" flex items-center  gap-5 pr-32">
+            
+            <a class="flex items-center gap-4 text-3xl font-black cursor-pointer">
+              <img class="lg:w-10 " src="./images/logo.webp" alt="">
+              Peddy</a>
+          </div>
+
+          <input type="text" placeholder="Search" class="flex-1 input input-bordered w-24 md:w-auto" />
+
+          <div class="pl-32 space-x-5 ">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <div class="indicator">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
+                  <span class="badge badge-sm indicator-item">8</span>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="dropdown dropdown-end">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-              <div class="w-10 rounded-full">
-                <img
-                  alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img
+                      alt="Tailwind CSS Navbar component"
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                  </div>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
               </div>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-              <li>
-                <a class="justify-between">
-                  Profile
-                  <span class="badge">New</span>
-                </a>
-              </li>
-              <li><a>Settings</a></li>
-              <li><a>Logout</a></li>
-            </ul>
           </div>
-        </div>
-      </div>
 
+        </div>
+      </nav>
+
+      <!-- banner section start here -->
+       <section class="flex flex-col justify-center items-center text-center mt-12 ">
+        <!-- text -->
+         <div>
+          <h5 class="text-xl md:text-2xl font-medium text-gray-400"> Bringing Families Together ❤️‍🔥</h5>
+
+          <h1 class="text-center text-3xl md:text-4xl lg:text-6xl font-extrabold mt-2 md:mt-6 xl:mt-8 leading-tight">Your Path to Adoption <br /> Starts Here</h1>
+
+          <p class="mt-2 md:mt-4 px-2 md:px-0 xl:text-xl">Adopting a pet is an exciting and fulfilling journey that brings
+            joy, love, and companionship into your life. <br class="hidden md:block" />
+            Our platform helps you find the right match and start the adoption
+            process easily.</p>
+
+            <a href="">
+              <button class="btn btn-accent mt-2 md:mt-4 md:text-lg xl:text-xl md:font-semibold xl:font-bold   text-white text-center">View More</button>
+            </a>
+          </div>
+          <!-- img -->
+           <div class="mt-4 lg:mt-6">
+            <img class="w-11/12 lg:w-full mx-auto" src="./images/pet.webp" alt="">
+           </div>
+       </section>
+
+  </header>
+
+  <main>
+   
+
+
+  </main>
+
+  <footer>
+
+  </footer>
 
 
 
